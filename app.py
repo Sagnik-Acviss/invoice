@@ -51,7 +51,7 @@ def get_table(pdf_path):
         table = table.dropna()
         for index, row in table.iterrows():
             if row.values[1] == 'Product Code' and row.values[2] == "Batch":
-                table.to_csv("data.csv")
+                # table.to_csv("data.csv")
                 print(table)  # Print the table DataFrame
                 return table
 
