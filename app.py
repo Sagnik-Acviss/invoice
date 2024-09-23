@@ -117,6 +117,7 @@ if uploaded_files:
                 number = get_invoice_number(words)
                 supply_location = get_supplying_location(words)
                 buyer_location = get_buyer_location(words)
+                print(number,supply_location,buyer_location)
                 df = get_table(pdf_path="temp/data.pdf")
 
 
