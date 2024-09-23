@@ -118,7 +118,7 @@ if uploaded_files:
                 supply_location = get_supplying_location(words)
                 buyer_location = get_buyer_location(words)
                 print(number,supply_location,buyer_location)
-                # df = get_table(pdf_path="temp/data.pdf")
+                df = get_table(pdf_path="temp/data.pdf")
 
 
                 # Display results in the Streamlit app
@@ -126,7 +126,7 @@ if uploaded_files:
                 st.write(f"**Invoice Number:** {number}")
                 st.write(f"**Supplying Location:** {supply_location}")
                 st.write(f"**Buyer Location:** {buyer_location}")
-                # st.dataframe(df)
+                st.dataframe(df)
                 st.write("-" * 80)
 
         except Exception as e:
